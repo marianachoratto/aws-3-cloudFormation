@@ -82,8 +82,10 @@ Vamos quebrar o que cada parte desse JSON significa, de forma bem didática:
 **"Description": "Um template simples..."**
 É um comentário para humanos. Ajuda você e sua equipe a entender rapidamente o que este template faz.
 
+
 **"Resources": { ... }**
 *Tradução: "Aqui estão os 'Ingredientes' que eu quero que você prepare."*
+
 
 > 💡
 > Esta é a seção mais importante do template. É aqui que você lista todos os recursos da AWS que você quer criar.
@@ -92,13 +94,16 @@ Vamos quebrar o que cada parte desse JSON significa, de forma bem didática:
 *Tradução: "O primeiro ingrediente que eu quero tem o apelido de 'MeuBucketDeEstudoS3'."*
 Este é o ID Lógico. É apenas um "apelido" que você inventa para se referir a este recurso dentro do template. Não é o nome real do bucket.
 
+
 **"Type": "AWS::S3::Bucket"**
 *Tradução: "O tipo de ingrediente é: um Bucket S3."*
 Isso diz ao CloudFormation exatamente qual serviço da AWS você quer usar. O formato é sempre `AWS::Serviço::Recurso`.
 
+
 **"Properties": { ... }**
 *Tradução: "Aqui estão as 'Instruções de Preparo' para este ingrediente."*
 É aqui que você define as configurações do seu bucket.
+
 
 **"Tags": [ ... ]**
 *Tradução: "Coloque uma etiqueta (Tag) neste bucket."*
